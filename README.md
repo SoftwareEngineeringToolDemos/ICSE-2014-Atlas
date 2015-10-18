@@ -10,4 +10,8 @@ This repository _is not_ the original repository for this tool. Here are some li
 * [A Demo of the Tool](http://www.ensoftcorp.com/atlas/developers/)
 * [Instructions on how to download and use Atlas](http://www.ensoftcorp.com/atlas/getting-started-with-atlas/#Installation)
 
+In this repository, for Atlas you will find:
+* :x: Source code (not available)
+* :x: The original tool (not available)
+
 This repository was constructed by [Sujith Katakam](https://github.com/sujithktkm) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to **Tom Deering**, **Suresh Kothari**, **Jeremias Sauceda** and **Jon Mathews** for their help in establishing this repository.
