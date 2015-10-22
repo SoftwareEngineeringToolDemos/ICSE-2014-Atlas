@@ -16,3 +16,10 @@ In this repository, for Atlas you will find:
 * :x: The original tool (not available)
 
 This repository was constructed by [Sujith Katakam](https://github.com/sujithktkm) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to **Tom Deering**, **Suresh Kothari**, **Jeremias Sauceda** and **Jon Mathews** for their help in establishing this repository.
+
+Additional information about the tool
+-------------------------------------
+
+Repository history:
+
+Atlas is now a commercial tool, and it does not exist in opensource platforms. So this repository does not maintain the original program history.
