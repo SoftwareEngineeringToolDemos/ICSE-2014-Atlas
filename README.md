@@ -1,7 +1,6 @@
 # ICSE-2014-Atlas
 
-Atlas: a new way to explore software, build analysis tools. Atlas is a new software snalysis platform from Ensoft Corp. It decouples the domain-specific analysis goal by splitting analysis into two distinct phases.
-
+Atlas: a new way to explore software, build analysis tools. 
 
 
 This repository contains information related to the tool **Atlas** presented in International Conference on Software Engineering, 2014. The tool was originally presented in [this paper](http://dl.acm.org/citation.cfm?id=2591065).
@@ -17,15 +16,3 @@ In this repository, for Atlas you will find:
 * :x: The original tool (not available)
 
 This repository was constructed by [Sujith Katakam](https://github.com/sujithktkm) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to **Tom Deering**, **Suresh Kothari**, **Jeremias Sauceda** and **Jon Mathews** for their help in establishing this repository.
-
-
-Additional information about the tool
--------------------------------------
-
-Repository history:
-
-Atlas is now a commercial tool, and it does not exist in opensource platforms. So this repository does not maintain the original program history.
-
-License:
-
-Atlas is now a commercial tool, it is not uder opensource licese. But users or organizations can get Free license from website.[Free License for Atlas Lite](http://www.ensoftcorp.com/atlas/lite/) , [Academic License](http://www.ensoftcorp.com/atlas/academic-license/)
