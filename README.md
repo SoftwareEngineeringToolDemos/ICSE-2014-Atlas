@@ -20,6 +20,14 @@ This repository was constructed by [Sujith Katakam](https://github.com/sujithktk
 Additional information about the tool
 -------------------------------------
 
-Repository history:
+
+**Repository history**:
 
 Atlas is now a commercial tool, and it does not exist in opensource platforms. So this repository does not maintain the original program history.
+
+
+
+**License**:
+
+Atlas is now a commercial tool, it is not under opensource license. But users or organizations can get Free license from website.
+[Free License for Atlas Lite](http://www.ensoftcorp.com/atlas/lite/) , [Academic License](http://www.ensoftcorp.com/atlas/academic-license/)
