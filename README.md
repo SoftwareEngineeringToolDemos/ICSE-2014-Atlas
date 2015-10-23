@@ -1,6 +1,6 @@
 # ICSE-2014-Atlas
 
-Atlas: a new way to explore software, build analysis tools. Atlas is a new software snalysis platform from Ensoft Corp. It decouples the domain-specific analysis goal by splitting analysis into two distinct phases.
+Atlas: A new way to explore software, build analysis tools. Atlas is a new software analysis platform from Ensoft Corporation. It decouples the domain-specific analysis goal by splitting analysis into two distinct phases.
 
 
 This repository contains information related to the tool **Atlas** presented in International Conference on Software Engineering, 2014. The tool was originally presented in [this paper](http://dl.acm.org/citation.cfm?id=2591065).
