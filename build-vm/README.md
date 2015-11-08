@@ -4,13 +4,6 @@ Environment
 ------
 __Virtual Box used:__ Ubuntu/trusty64 (https://atlas.hashicorp.com/ubuntu/boxes/trusty64)
 
-__Script:__ For Windows only (vagrant + powershell)
-
-__External sources:__ [modernIE/w7-ie11](https://atlas.hashicorp.com/modernIE/boxes/w7-ie11),[Vagrant Provision Reboot Plugin](https://github.com/exratione/vagrant-provision-reboot)
-
-__prerequisite software:__ jre-7u79-windows-i586
-
-
 Folder content
 -----
 This build-vm folder contains following things:
