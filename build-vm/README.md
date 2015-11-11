@@ -32,16 +32,10 @@ Please wait until "__vagrant up__" finishes execution before working on GUI.
 
 Reference
 -----
-1 http://askubuntu.com/questions/56104/how-can-i-install-sun-oracles-proprietary-java-jdk-6-7-8-or-jre
-
-2 https://www.gaggl.com/2013/06/quick-manual-eclipse-install-on-ubuntu/
-
-3 http://aruizca.com/steps-to-create-a-vagrant-base-box-with-ubuntu-14-04-desktop-gui-and-virtualbox/
-
-4 https://github.com/ljdursi/hadoop-for-hpcers-tutorial/blob/master/vm-cfg/gui/Vagrantfile
-
-5 http://askubuntu.com/questions/53822/how-do-you-run-ubuntu-server-with-a-gui
-
-6 http://serverfault.com/questions/500764/dpkg-reconfigure-unable-to-re-open-stdin-no-file-or-directory
-
-7 https://docs.vagrantup.com/v2/getting-started/
+1. http://askubuntu.com/questions/56104/how-can-i-install-sun-oracles-proprietary-java-jdk-6-7-8-or-jre
+2. https://www.gaggl.com/2013/06/quick-manual-eclipse-install-on-ubuntu/
+3. http://aruizca.com/steps-to-create-a-vagrant-base-box-with-ubuntu-14-04-desktop-gui-and-virtualbox/
+4. https://github.com/ljdursi/hadoop-for-hpcers-tutorial/blob/master/vm-cfg/gui/Vagrantfile
+5. http://askubuntu.com/questions/53822/how-do-you-run-ubuntu-server-with-a-gui
+6. http://serverfault.com/questions/500764/dpkg-reconfigure-unable-to-re-open-stdin-no-file-or-directory
+7. https://docs.vagrantup.com/v2/getting-started/
