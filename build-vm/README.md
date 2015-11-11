@@ -29,6 +29,12 @@ Note:
 
 Please wait until "__vagrant up__" finishes execution before working on GUI.
 
+***
+
+* This install Oracle JAVA 1.7 and Eclipse Luna (4.4). 
+* Also copies necessary files to Desktop.
+
+***
 
 Reference
 -----
