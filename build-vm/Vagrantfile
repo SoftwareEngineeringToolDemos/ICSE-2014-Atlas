@@ -3,16 +3,7 @@
 
 $script = <<SCRIPT
 
-# Changing dpkg locales
-
-export LANGUAGE=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-locale-gen en_US.UTF-8
-dpkg-reconfigure locales
-
 # Install JAVA from Oracle
-sudo apt-get update
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 echo "oracle-java7-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
@@ -28,20 +19,6 @@ tar xvzf eclipse-java-luna-SR2-linux-gtk.tar.gz
 rm -f eclipse-java-luna-SR2-linux-gtk.tar.gz
 sudo ln -s eclipse/eclipse /usr/bin/eclipse
 
-# Create an application launcher for Eclipse
-sudo touch /usr/share/applications/eclipse.desktop
-sudo echo "[Desktop Entry]" >> /usr/share/applications/eclipse.desktop
-sudo echo "Version=4.2" >> /usr/share/applications/eclipse.desktop
-sudo echo "Name=Eclipse" >> /usr/share/applications/eclipse.desktop
-sudo echo "Comment=Integrated Development Environment" >> /usr/share/applications/eclipse.desktop
-sudo echo "Exec=env UBUNTU_MENUPROXY=0 /opt/eclipse/eclipse" >> /usr/share/applications/eclipse.desktop
-sudo echo "Type=Application" >> /usr/share/applications/eclipse.desktop
-sudo echo "Icon=/opt/eclipse/icon.xpm" >> /usr/share/applications/eclipse.desktop
-sudo echo "Terminal=false" >> /usr/share/applications/eclipse.desktop
-sudo echo "NoDisplay=false" >> /usr/share/applications/eclipse.desktop
-sudo echo "Categories=Development;IDE" >> /usr/share/applications/eclipse.desktop
-sudo update-desktop-database
-
 # Obtain required Desktop files for VM
 sudo wget -O /home/vagrant/Desktop/vm-files.tar.gz "https://www.dropbox.com/s/riid1h780muq38o/vm-files.tar.gz?dl=1"
 tar zxvf /home/vagrant/Desktop/vm-files.tar.gz -C /home/vagrant/Desktop/
@@ -49,13 +26,8 @@ sudo rm /home/vagrant/Desktop/vm-files.tar.gz
 mv  -v /home/vagrant/Desktop/vm-files/* /home/vagrant/Desktop/
 rmdir /home/vagrant/Desktop/vm-files
 
-sudo apt-get update
-
 # Install ubuntu desktop
 sudo apt-get install -y -f ubuntu-desktop
-
-# Print JAVA version (test)
-java -version
 
 # Reboot machine, for all changes to be applied
 sudo reboot
