@@ -9,25 +9,68 @@ sudo apt-get update
 echo "oracle-java7-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
 sudo apt-get install -y oracle-java7-installer
 
+
+# Auto login on startup
+sudo mkdir /etc/lightdm/lightdm.conf.d
+sudo touch /etc/lightdm/lightdm.conf.d/50-myconfig.conf
+sudo echo "[SeatDefaults]" >> /etc/lightdm/lightdm.conf.d/50-myconfig.conf
+sudo echo "autologin-user=vagrant" >> /etc/lightdm/lightdm.conf.d/50-myconfig.conf
+
+
 # Create 'Desktop' directory and change directory to 'Desktop'
 mkdir Desktop
 cd Desktop
 
-# Installs Eclipse from eclipse website and does cleanup
-sudo wget http://carroll.aset.psu.edu/pub/eclipse/technology/epp/downloads/release/luna/SR2/eclipse-java-luna-SR2-linux-gtk.tar.gz
-tar xvzf eclipse-java-luna-SR2-linux-gtk.tar.gz
-rm -f eclipse-java-luna-SR2-linux-gtk.tar.gz
+
+# Install Eclipse and workspace
+cd /home/vagrant/Desktop
+sudo wget -O /home/vagrant/Desktop/eclipse.tar.gz "https://drive.google.com/open?id=0B5qzMDCI2DFJdVZzUjNHZFNZSG8"
+# sudo wget -O /home/vagrant/Desktop/eclipse.tar.gz "https://www.dropbox.com/s/0mt5fqng9e3c1x5/eclipse.tar.gz?dl=1"
+tar xvzf eclipse.tar.gz
+rm -f eclipse.tar.gz
+# sudo chmod 777 -R /home/vagrant/Desktop/*
 sudo ln -s eclipse/eclipse /usr/bin/eclipse
 
-# Obtain required Desktop files for VM
-sudo wget -O /home/vagrant/Desktop/vm-files.tar.gz "https://www.dropbox.com/s/riid1h780muq38o/vm-files.tar.gz?dl=1"
-tar zxvf /home/vagrant/Desktop/vm-files.tar.gz -C /home/vagrant/Desktop/
-sudo rm /home/vagrant/Desktop/vm-files.tar.gz
-mv  -v /home/vagrant/Desktop/vm-files/* /home/vagrant/Desktop/
-rmdir /home/vagrant/Desktop/vm-files
 
-# Install ubuntu desktop
-sudo apt-get install -y -f ubuntu-desktop
+# Obtain required Desktop files for VM
+sudo wget -O /home/vagrant/Desktop/vm-files.tar.gz https://drive.google.com/open?id=0B5qzMDCI2DFJdVZzUjNHZFNZSG8
+# sudo wget -O /home/vagrant/Desktop/vm-files.tar.gz "https://www.dropbox.com/s/riid1h780muq38o/vm-files.tar.gz?dl=1"
+tar xvzf /home/vagrant/Desktop/vm-files.tar.gz -C /home/vagrant/Desktop/
+sudo rm /home/vagrant/Desktop/vm-files.tar.gz
+pwd
+
+
+# Install Atlas plugin in Eclipse
+cd eclipse
+./eclipse -application org.eclipse.equinox.p2.director -repository http://download.ensoftcorp.com/atlas/eclipse -installIU com.ensoftcorp.atlas.java.feature.feature.group
+
+
+# Remove unused icons from sidebar
+sudo rm -f "/usr/share/applications/ubuntu-amazon-default.desktop"
+sudo rm -f "/usr/share/applications/libreoffice-calc.desktop"
+sudo rm -f "/usr/share/applications/libreoffice-writer.desktop"
+sudo rm -f "/usr/share/applications/libreoffice-impress.desktop"
+sudo rm -f "/usr/share/applications/ubuntu-software-center.desktop"
+
+
+# Startup files
+cd /home/vagrant/.config/
+mkdir autostart
+cd /home/vagrant
+
+sudo wget -O /home/vagrant/req-files.tar.gz https://drive.google.com/open?id=0B5qzMDCI2DFJOFVVZkZTRjNNVWs
+tar xvzf /home/vagrant/req-files.tar.gz -C /home/vagrant/
+sudo rm /home/vagrant/req-files.tar.gz
+
+sudo mv /home/vagrant/eclipse.desktop /usr/share/applications/eclipse.desktop
+sudo mv /home/vagrant/login_desktop.sh.desktop /etc/xdg/autostart/login_desktop.sh.desktop
+sudo mv /home/vagrant/start_gedit.sh.desktop /home/vagrant/.config/autostart/start_gedit.sh.desktop
+sudo update-desktop-database
+
+
+# Update command
+sudo apt-get update
+
 
 # Reboot machine, for all changes to be applied
 sudo reboot
@@ -35,10 +78,7 @@ sudo reboot
 SCRIPT
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "ubuntu/trusty32"
-  # config.vm.hostname = "docker-host"
-  # config.vm.provision "docker"
-  # config.vm.network :forwarded_port, guest: 80, host: 4567
+  config.vm.box = "box-cutter/ubuntu1404-desktop"
 
   config.vm.provider "virtualbox" do |vb|
     vb.gui = true
