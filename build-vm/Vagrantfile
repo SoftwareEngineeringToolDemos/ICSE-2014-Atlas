@@ -24,8 +24,8 @@ cd Desktop
 
 # Install Eclipse and workspace
 cd /home/vagrant/Desktop
-sudo wget -O /home/vagrant/Desktop/eclipse.tar.gz "https://drive.google.com/open?id=0B5qzMDCI2DFJdVZzUjNHZFNZSG8"
-# sudo wget -O /home/vagrant/Desktop/eclipse.tar.gz "https://www.dropbox.com/s/0mt5fqng9e3c1x5/eclipse.tar.gz?dl=1"
+# sudo wget -O /home/vagrant/Desktop/eclipse.tar.gz "https://drive.google.com/open?id=0B5qzMDCI2DFJdVZzUjNHZFNZSG8"
+sudo wget -O /home/vagrant/Desktop/eclipse.tar.gz "https://www.dropbox.com/s/0mt5fqng9e3c1x5/eclipse.tar.gz?dl=1"
 tar xvzf eclipse.tar.gz
 rm -f eclipse.tar.gz
 # sudo chmod 777 -R /home/vagrant/Desktop/*
@@ -33,9 +33,10 @@ sudo ln -s eclipse/eclipse /usr/bin/eclipse
 
 
 # Obtain required Desktop files for VM
-sudo wget -O /home/vagrant/Desktop/vm-files.tar.gz https://drive.google.com/open?id=0B5qzMDCI2DFJdVZzUjNHZFNZSG8
+sudo wget -O /home/vagrant/Desktop/vm-files.tar.gz "https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/raw/master/build-vm/vm-files.tar.gz"
 # sudo wget -O /home/vagrant/Desktop/vm-files.tar.gz "https://www.dropbox.com/s/riid1h780muq38o/vm-files.tar.gz?dl=1"
-tar xvzf /home/vagrant/Desktop/vm-files.tar.gz -C /home/vagrant/Desktop/
+tar xvf /home/vagrant/Desktop/vm-files.tar.gz -C /home/vagrant/Desktop/
+sudo chmod 777 -R /home/vagrant/Desktop/*
 sudo rm /home/vagrant/Desktop/vm-files.tar.gz
 pwd
 
@@ -58,8 +59,8 @@ cd /home/vagrant/.config/
 mkdir autostart
 cd /home/vagrant
 
-sudo wget -O /home/vagrant/req-files.tar.gz https://drive.google.com/open?id=0B5qzMDCI2DFJOFVVZkZTRjNNVWs
-tar xvzf /home/vagrant/req-files.tar.gz -C /home/vagrant/
+sudo wget -O /home/vagrant/req-files.tar.gz "https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/raw/master/build-vm/req_files.tar.gz"
+tar xvf /home/vagrant/req-files.tar.gz -C /home/vagrant/
 sudo rm /home/vagrant/req-files.tar.gz
 
 sudo mv /home/vagrant/eclipse.desktop /usr/share/applications/eclipse.desktop
