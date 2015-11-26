@@ -8,13 +8,13 @@ __Virtual Box used:__ [box-cutter/ubuntu1404-desktop](https://vagrantcloud.com/b
 Folder content
 -----
 This build-vm folder contains following things:
-- [__README.md file__](https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/blob/master/build-vm/README.md)
+- [README.md](https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/blob/master/build-vm/README.md) file
   This files gives a brief idead of how to create, spin up and login into this VM.
-- [__Vagrantfile__](https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/blob/master/build-vm/Vagrantfile)
+- [Vagrantfile](https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/blob/master/build-vm/Vagrantfile)
   This is the script (& configuration) file of the VM.
-- [__vm-files.tar.gz__](https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/blob/master/build-vm/vm-files.tar.gz)
+- [vm-files.tar.gz](https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/blob/master/build-vm/vm-files.tar.gz)
   This zip file has all necessary desktop file (README.txt, license.txt, Installation.txt etc.,)
-- [__req_files.tar.gz__](https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/blob/master/build-vm/req_files.tar.gz)
+- [req_files.tar.gz](https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/blob/master/build-vm/req_files.tar.gz)
   This zip file has certail bash scripts and desktop files for the same (to run the bash scripts on startup)
 
 Steps to create a VM using this build
