@@ -73,6 +73,7 @@ sudo update-desktop-database
 sudo wget -O /home/vagrant/Desktop/vm-files.tar.gz "https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/raw/master/build-vm/vm-files.tar.gz"
 tar zxvf /home/vagrant/Desktop/vm-files.tar.gz -C /home/vagrant/Desktop/
 sudo rm /home/vagrant/Desktop/vm-files.tar.gz
+sudo chmod 775 /home/vagrant/Desktop/*
 pwd
 
 
