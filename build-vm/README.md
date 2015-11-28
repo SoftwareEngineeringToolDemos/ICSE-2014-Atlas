@@ -14,8 +14,6 @@ This build-vm folder contains following things:
   This is the script (& configuration) file of the VM.
 - [vm-files.tar.gz](https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/blob/master/build-vm/vm-files.tar.gz) -
   This zip file has all necessary desktop file (README.txt, license.txt, Installation.txt etc.,)
-- [req_files.tar.gz](https://github.com/SoftwareEngineeringToolDemos/ICSE-2014-Atlas/blob/master/build-vm/req_files.tar.gz) -
-  This zip file has certail bash scripts and desktop files for the same (to run the bash scripts on startup)
 
 Steps to create a VM using this build
 -----
