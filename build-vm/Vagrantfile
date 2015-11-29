@@ -110,8 +110,8 @@ sudo echo "Exec=/home/vagrant/start_gedit.sh" >> start_gedit.sh.desktop
 sudo echo "Hidden=false" >> start_gedit.sh.desktop
 sudo echo "NoDisplay=false" >> start_gedit.sh.desktop
 sudo echo "X-GNOME-Autostart-enabled=true" >> start_gedit.sh.desktop
-sudo echo "Name=LockScreen Disabled" >> start_gedit.sh.desktop
-sudo echo "Comment=Disable the lock screen" >> start_gedit.sh.desktop
+sudo echo "Name=Open gedit" >> start_gedit.sh.desktop
+sudo echo "Comment=Open gedit with README and License files" >> start_gedit.sh.desktop
 sudo chmod +x /home/vagrant/start_gedit.sh.desktop
 sudo update-desktop-database
 
