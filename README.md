@@ -14,6 +14,7 @@ This repository _is not_ the original repository for this tool. Here are some li
 In this repository, for Atlas you will find:
 * :x: Source code (not available)
 * :x: The original tool (not available)
+* :white_check_mark: [Virtual machine containing tool] (https://drive.google.com/open?id=0B5qzMDCI2DFJcEQtQTVXZzZoajQ)
 
 This repository was constructed by [Sujith Katakam](https://github.com/sujithktkm) under the supervision of [Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to **Tom Deering**, **Suresh Kothari**, **Jeremias Sauceda** and **Jon Mathews** for their help in establishing this repository.
 
@@ -29,5 +30,5 @@ Atlas is now a commercial tool, and it does not exist in opensource platforms. S
 
 **License**:
 
-Atlas is now a commercial tool, it is not under opensource license. But users or organizations can get Free license from website.
+Atlas is now a commercial tool, it is not under opensource license. But users or organizations can get free license from [Ensoft] (http://www.ensoftcorp.com/) website.
 [Free License for Atlas Lite](http://www.ensoftcorp.com/atlas/lite/) , [Academic License](http://www.ensoftcorp.com/atlas/academic-license/)
